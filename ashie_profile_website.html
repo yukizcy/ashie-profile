@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashie's Fandom Profile</title>
+<style>
+:root{
+  --bg:#0c0a12; --panel:#17131f; --panel2:#211a2c; --text:#f5eef8;
+  --muted:#c9b9cf; --pink:#d98fba; --blue:#8fa9df; --red:#a95865;
+  --line:#3a2d45;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{
+  margin:0;background:radial-gradient(circle at 15% 5%,#34223b 0,transparent 30%),
+  radial-gradient(circle at 85% 15%,#172544 0,transparent 28%),var(--bg);
+  color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.7;
+}
+a{color:inherit;text-decoration:none}
+.nav{
+  position:sticky;top:0;z-index:10;background:rgba(12,10,18,.88);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line);
+  display:flex;gap:18px;justify-content:center;flex-wrap:wrap;padding:13px;
+  font-family:Arial,sans-serif;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;
+}
+.nav a{color:var(--muted)}.nav a:hover{color:#fff}
+.hero{min-height:72vh;display:grid;place-items:center;text-align:center;padding:70px 20px}
+.hero-inner{max-width:850px}
+.kicker{letter-spacing:.35em;text-transform:uppercase;color:var(--pink);font:700 .75rem Arial,sans-serif}
+h1{font-size:clamp(3rem,9vw,6.7rem);margin:10px 0 0;line-height:1}
+.subtitle{color:var(--muted);font-style:italic;font-size:1.15rem}
+.tags{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:25px}
+.tag{border:1px solid var(--line);background:#ffffff08;border-radius:999px;padding:5px 12px;font: .8rem Arial,sans-serif;color:#ded0e5}
+.container{max-width:1050px;margin:auto;padding:20px}
+section{margin:50px 0}
+.section-title{font-size:2rem;margin-bottom:18px}
+.section-title span{color:var(--pink)}
+.card{background:linear-gradient(145deg,#191420,#120f18);border:1px solid var(--line);border-radius:22px;padding:25px;box-shadow:0 15px 40px #0004}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.info b{color:var(--pink)}
+.fandoms{column-count:2;column-gap:35px}
+.fandoms p{margin:0 0 6px;break-inside:avoid;color:#ddd0e1}
+.quote{border-left:3px solid var(--blue);padding:10px 18px;color:#d9d8e9;font-style:italic;background:#ffffff05;border-radius:0 12px 12px 0}
+.ship{overflow:hidden}
+.ship-head{padding:28px;background:linear-gradient(120deg,#2a1522,#151a2c)}
+.ship.vialastor .ship-head{background:linear-gradient(120deg,#30151b,#201421)}
+.ship h3{font-size:1.8rem;margin:0 0 5px}
+.ship small{color:var(--muted)}
+details{border-top:1px solid var(--line);padding:13px 0}
+details:first-of-type{border-top:0}
+summary{cursor:pointer;font-weight:bold;color:#eadbea}
+ul{padding-left:20px}
+.footer{text-align:center;color:#9d8fa5;padding:55px 20px;font-size:.85rem}
+.back{display:inline-block;margin-top:15px;color:var(--pink)}
+@media(max-width:650px){.fandoms{column-count:1}.nav{gap:10px}.card{padding:19px}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="#about">About</a><a href="#fandoms">Fandoms</a><a href="#favorites">Favorites</a>
+  <a href="#hobbies">Hobbies</a><a href="#music">Music</a><a href="#fashion">Fashion</a><a href="#ships">Yumeships</a>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">welcome to my little corner of the internet</div>
+    <h1>Ashie / Ash</h1>
+    <p class="subtitle">fandoms • cosplay • music • fictional characters • chaos</p>
+    <div class="tags">
+      <span class="tag">She/Her</span><span class="tag">August 5</span><span class="tag">ENFP</span>
+      <span class="tag">Artist</span><span class="tag">Cosplayer</span>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+<section id="about">
+  <h2 class="section-title"><span>୨୧</span> A Little About Me</h2>
+  <div class="card">
+    <p>Hii!! I’m Ashie, but Ash is fine too! I’m a pretty friendly person and I love meeting new people online. I can be a little quiet at first, but once I get comfortable, I’ll probably start yapping a LOT about my interests. (˶ᵔ ᵕ ᔅ˶)</p>
+    <div class="grid">
+      <div class="info"><b>Name</b><br>Ashie / Ash</div>
+      <div class="info"><b>Pronouns</b><br>She/Her</div>
+      <div class="info"><b>Birthday</b><br>August 5</div>
+      <div class="info"><b>MBTI</b><br>ENFP</div>
+    </div>
+  </div>
+</section>
+
+<section id="favorites">
+  <h2 class="section-title"><span>♡</span> Favourite Characters</h2>
+  <div class="card"><p>♡ Alastor<br>♡ Stolas<br>♡ Lucifer Morningstar<br>♡ Levi Ackerman<br>♡ Jax<br>♡ Muichiro<br>♡ Megumi<br>♡ Many more :33</p></div>
+</section>
+
+<section id="fandoms">
+  <h2 class="section-title"><span>✦</span> Fandoms</h2>
+  <div class="card fandoms">
+<p>♡ Hazbin Hotel</p>
+<p>♡ Helluva Boss</p>
+<p>♡ The Amazing Digital Circus</p>
+<p>♡ Attack on Titan</p>
+<p>♡ Demon Slayer</p>
+<p>♡ Jujutsu Kaisen</p>
+<p>♡ Dandadan</p>
+<p>♡ Detective Conan</p>
+<p>♡ My Happy Marriage</p>
+<p>♡ My Love Story with Yamada-kun at Lv999</p>
+<p>♡ The Apothecary Diaries</p>
+<p>♡ Horimiya</p>
+<p>♡ Death Note</p>
+<p>♡ There’s No Freaking Way I’ll Be Your Lover! Unless...</p>
+<p>♡ Whisper Me a Love Song</p>
+<p>♡ Citrus</p>
+<p>♡ A Silent Voice</p>
+<p>♡ I Want to Eat Your Pancreas</p>
+<p>♡ Kimi ni Todoke</p>
+<p>♡ Kakegurui</p>
+<p>♡ My Dress-Up Darling</p>
+<p>♡ Komi Can’t Communicate</p>
+<p>♡ Spy × Family</p>
+<p>♡ Romantic Killer</p>
+<p>♡ Loveless</p>
+<p>♡ Suzume</p>
+<p>♡ Kaguya-sama: Love Is War</p>
+<p>♡ Special A</p>
+<p>♡ Uma Musume Pretty Derby</p>
+<p>♡ Bubble</p>
+<p>♡ Love Lab</p>
+<p>♡ My Hero Academia</p>
+<p>♡ Your Name</p>
+<p>♡ Your Lie in April</p>
+<p>♡ Bocchi the Rock!</p>
+<p>♡ Tamon’s B-side</p>
+<p>♡ Frieren: Beyond Journey’s End</p>
+<p>♡ Amagami SS</p>
+<p>♡ Violet Evergarden</p>
+<p>♡ Adachi and Shimamura</p>
+<p>♡ Junji Ito Collection</p>
+<p>♡ Rascal Does Not Dream of Bunny Girl Senpai</p>
+<p>♡ This Monster Wants to Eat Me</p>
+<p>♡ The Angel Next Door Spoils Me Rotten</p>
+<p>♡ Nana</p>
+<p>♡ Yarichin Bitch Club</p>
+<p>♡ Midori</p>
+<p>♡ Tamako Love Story</p>
+<p>♡ The Fragrant Flower Blooms with Dignity</p>
+<p>♡ The Wind Rises</p>
+<p>♡ The Dangers in My Heart</p>
+<p>♡ Gushing Over Magical Girls</p>
+<p>♡ You and I Are Polar Opposites</p>
+<p>♡ Spirited Away</p>
+<p>♡ Doki Doki Literature Club</p>
+<p>♡ Twisted Wonderland</p>
+<p>♡ Project Sekai (PJSK)</p>
+<p>♡ Friday Night Funkin’ (FNF)</p>
+<p>♡ Green Yuri</p>
+<p>♡ Some Yuri/Yaoi</p>
+  </div>
+</section>
+
+<section id="hobbies">
+  <h2 class="section-title"><span>✿</span> Hobbies</h2>
+  <div class="card grid">
+    <div>🎧 Listening to music</div><div>🎨 Drawing & sketching</div><div>🎭 Cosplay</div>
+    <div>🎸 Playing/learning guitar</div><div>📺 Watching anime & shows</div><div>👗 Trying fashion styles</div>
+    <div>🌿 Finding new fandoms</div>
+  </div>
+</section>
+
+<section id="music">
+  <h2 class="section-title"><span>♪</span> Music</h2>
+  <div class="card"><p>I LOVE music and basically listen to it all the time. I especially like <b>Ado, Japanese music, weird kid songs, Hellaverse songs, anime songs, rock, alt, metal,</b> and <b>grunge</b>.</p></div>
+</section>
+
+<section id="fashion">
+  <h2 class="section-title"><span>♧</span> Fashion</h2>
+  <div class="card"><p>I like experimenting with <b>goth, alt, gyaru, jirai kei</b>, and other styles. I also really enjoy putting together cosplay outfits!</p></div>
+</section>
+
+<section id="ships">
+  <h2 class="section-title"><span>♡</span> My Yumeships</h2>
+
+  <article class="card ship">
+    <div class="ship-head">
+      <h3>★ Caelum × Stolas ★</h3>
+      <small>CaeLas — “The Stardust Princes”</small>
+    </div>
+    <details open><summary>🌌 Prince Caelum</summary>
+      <p><b>Full Name:</b> Prince Caelum<br><b>Gender:</b> Male<br><b>Species:</b> Goetia Owl Demon<br><b>Status:</b> Goetia Prince<br><b>Ship:</b> Caelum × Stolas<br><b>Ship Names:</b> CaeLas / Stardust Princes</p>
+      <p>Caelum is a quiet and graceful Goetia prince with a deep fascination for books, astrology, tea, and the stars. He has midnight-blue feathers covered in tiny silver star-like markings. He is smaller than Stolas and usually keeps to himself during social gatherings.</p>
+    </details>
+    <details><summary>🩵 Appearance & Personality</summary>
+      <p>Caelum has midnight-blue feathers decorated with small silver markings resembling stars scattered across a night sky. His usual colors are midnight blue, silver, and black, with celestial details inspired by constellations.</p>
+      <p>He is calm, patient, observant, and intelligent. Around Stolas, he becomes noticeably softer, affectionate, playful, and clingy. Stolas is the dramatic and poetic one, while Caelum is the grounding presence who can simply say:</p>
+      <div class="quote">“Stolas, breathe.”</div>
+    </details>
+    <details><summary>📚 How They Met</summary>
+      <p>Caelum and Stolas first met at a Goetia gathering. While the other princes were socializing, Caelum quietly wandered away and entered Stolas's observatory library. He found one of Stolas's favorite grimoires and began reading it.</p>
+      <p>They began talking about astronomy. Caelum noticed an error on one of Stolas's star charts and calmly corrected it—the chart had been wrong for nearly 200 years. Stolas was immediately fascinated.</p>
+    </details>
+    <details><summary>⭐ Their Dynamic & Relationship</summary>
+      <p>Stolas is the dramatic, lovesick, overly poetic prince. Caelum is the quiet, calm prince who keeps him grounded. Their friendship gradually became something deeper through astrology, reading, tea, and watching the stars.</p>
+      <p>Stolas affectionately calls Caelum “My Caelum” and “My sky.” Their relationship is affectionate, loyal, and full of playful teasing.</p>
+    </details>
+    <details><summary>🌌 Favorite Moments Together</summary>
+      <ul><li>🪐 Observatory nights</li><li>🫖 Chamomile tea</li><li>🌙 Balcony dates</li></ul>
+    </details>
+    <details><summary>🪽 Abilities</summary>
+      <p>Astral Manipulation • Celestial Magic • Astral Projection • Celestial Navigation • Grimoire Magic • Flight • Telekinesis • Constellation Summoning • Protective Magic • Stardust Veil</p>
+    </details>
+    <details><summary>🖤 Stella & Caelum</summary>
+      <p>Stella dislikes Caelum because of how much Stolas's attention has shifted toward him. Caelum remains polite and composed rather than competing with her.</p>
+    </details>
+    <details><summary>👑 Royal Aesthetic & Fun Facts</summary>
+      <p>Stolas wears deep red; Caelum wears midnight blue with silver stars. Together they resemble a sky transitioning from sunset into night.</p>
+      <p>Shared aesthetic: 🌌 Stars • 🪽 Royalty • 📚 Ancient books • 🫖 Tea • 🌙 Moonlight • 🔮 Celestial magic</p>
+      <p>Caelum loves ancient books, is highly knowledgeable about astrology, is smaller than Stolas, and secretly loves Stolas's dramatic personality. Their unofficial comfort drink is chamomile tea.</p>
+    </details>
+  </article>
+
+  <article class="card ship vialastor" style="margin-top:25px">
+    <div class="ship-head">
+      <h3>🦌 Vivienne × Alastor 🦌</h3>
+      <small>Vialastor — “The Velvet Voice of the South”</small>
+    </div>
+    <details open><summary>🥀 Vivienne Vale</summary>
+      <p><b>Full Name:</b> Vivienne Vale<br><b>Nickname:</b> Vivi<br><b>Age at Death:</b> 28<br><b>Year of Death:</b> 1932<br><b>Place:</b> New Orleans, Louisiana<br><b>Species:</b> Sinner Demon<br><b>Occupation in Life:</b> Singer, Musician & Radio Host<br><b>Title:</b> The Velvet Voice of the South<br><b>Radio Show:</b> The Midnight Broadcast<br><b>Ship Name:</b> Vialastor<br><b>Relationship:</b> Alastor's Partner</p>
+    </details>
+    <details><summary>🥀 Appearance & 🎙️ Personality</summary>
+      <p>Vivienne has a graceful 1930s-inspired appearance, with long dark-auburn hair, deep red eyes, and an elegant dark-red outfit with black details, gloves, stockings, and vintage heels.</p>
+      <p>She is elegant, charismatic, observant, extremely composed, and naturally soothing. Behind that charm, she is calculating and manipulative, preferring to observe people carefully before making decisions. Around people she trusts—especially Alastor—she can be playful and teasing.</p>
+    </details>
+    <details><summary>📻 Human Life</summary>
+      <p>Before Hell, Vivienne lived in New Orleans during the 1930s. She became known for her beautiful singing voice and hosted a late-night radio program called <i>The Midnight Broadcast</i>, airing around 11 PM.</p>
+      <p>Her public persona was a carefully constructed mask. She was secretly a serial killer who used her charm and position as a radio personality to gain people's trust. She was eventually confronted after evidence began pointing toward her and died in 1932 at 28.</p>
+    </details>
+    <details><summary>🔥 Arrival in Hell</summary>
+      <p>When Vivienne arrived in Hell, her voice, fascination with broadcasting, and darker nature remained. She eventually returned to radio and became known as “The Velvet Voice of the South.”</p>
+    </details>
+    <details><summary>📻 Meeting Alastor</summary>
+      <p>Vivienne heard rumors about The Radio Demon and became curious. One night, she followed the sound of an old radio broadcast and encountered Alastor. He recognized her name, and they quickly noticed their similarities: both were performers, both had connections to radio, both had lived double lives, and both had blood on their hands.</p>
+      <p>Their first relationship was based on curiosity and rivalry. They competed over broadcasting, music, and performance before their rivalry became companionship.</p>
+    </details>
+    <details><summary>❤️ Their Relationship</summary>
+      <p>Vivienne became one of the few people Alastor could spend hours with discussing music and broadcasting, while Alastor became one of the few people Vivienne didn't have to lie to. Their teasing gradually became affection, and their relationship developed from rivals → friends → confidants → lovers.</p>
+      <p>Vivienne sees Alastor without being intimidated by the monster everyone else sees, while Alastor is one of the few people she allows behind her mask.</p>
+    </details>
+    <details><summary>🎙️ Abilities</summary>
+      <p>Velvet Voice • Sonic Manipulation • Radio Manipulation • Broadcast Projection • Musical Manifestation • Voice Mimicry • Enhanced Charisma</p>
+    </details>
+    <details><summary>🕯️ Likes & Dislikes</summary>
+      <p><b>Likes:</b> Jazz, vintage music, late-night broadcasting, singing, old records, vintage microphones, New Orleans, strong coffee, elegant clothing, roses, quiet conversations, performing, radio dramas, Alastor.</p>
+      <p><b>Dislikes:</b> Being underestimated, being forgotten, dishonesty directed toward her, interruptions, poor radio reception, being rushed, losing control, people touching her belongings, being treated as weak, and threats toward people she cares about.</p>
+    </details>
+    <details><summary>📻 Fun Facts</summary>
+      <ul>
+        <li>Her broadcasts began at approximately 11 PM.</li>
+        <li>She remembers people's voices extremely well.</li>
+        <li>She can recognize a person by their voice before seeing them.</li>
+        <li>She still collects old records.</li>
+        <li>The quieter Vivienne becomes, the more dangerous she is.</li>
+        <li>She considers her microphone almost like an old companion.</li>
+        <li>She and Alastor can spend hours discussing radio and music.</li>
+        <li>Their broadcasts together are infamous throughout Hell.</li>
+        <li>Her favorite phrase is: “Every story sounds better after midnight.”</li>
+      </ul>
+    </details>
+  </article>
+</section>
+</main>
+
+<footer class="footer">
+  <div>✦ Ashie's little fandom corner ✦</div>
+  <a class="back" href="#">Back to top ↑</a>
+</footer>
+</body>
+</html>
