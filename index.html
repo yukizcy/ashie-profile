@@ -53,9 +53,44 @@ ul{padding-left:20px}
 .footer{text-align:center;color:#9d8fa5;padding:55px 20px;font-size:.85rem}
 .back{display:inline-block;margin-top:15px;color:var(--pink)}
 @media(max-width:650px){.fandoms{column-count:1}.nav{gap:10px}.card{padding:19px}}
+
+/* Opening screen */
+#opening{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;overflow:hidden;background:#050308;transition:opacity .9s ease,visibility .9s ease}
+#opening.hide{opacity:0;visibility:hidden;pointer-events:none}
+.opening-bg{position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,#351725 0,transparent 38%),radial-gradient(circle at 50% 100%,#17102a 0,transparent 55%),#050308}
+.curtain{position:absolute;top:0;width:34%;height:100%;background:linear-gradient(90deg,#12050b,#5a1729 48%,#210812);box-shadow:0 0 70px #000;transition:transform 1.25s cubic-bezier(.77,0,.18,1)}
+.curtain.left{left:0;clip-path:polygon(0 0,100% 0,82% 100%,0 100%)}
+.curtain.right{right:0;clip-path:polygon(0 0,100% 0,100% 100%,18% 100%)}
+#opening.hide .curtain.left{transform:translateX(-110%)}
+#opening.hide .curtain.right{transform:translateX(110%)}
+.opening-card{position:relative;z-index:2;text-align:center;width:min(88%,620px);padding:42px 25px;border:1px solid #7b354d;background:#09070dcc;box-shadow:0 0 80px #000,0 0 35px #8e315044;animation:openingIn 1.1s ease both}
+.opening-kicker{font:700 .72rem Arial,sans-serif;letter-spacing:.42em;text-transform:uppercase;color:var(--pink)}
+.opening-title{font-size:clamp(3.2rem,12vw,7rem);line-height:.9;margin:16px 0 8px;color:#f2dce7;text-shadow:0 0 25px #c45c7a66}
+.opening-sub{color:var(--muted);font-style:italic;margin:0 0 28px}
+.enter-btn{border:1px solid var(--pink);background:#160b12;color:#f5eef8;padding:11px 38px;font:700 .78rem Arial,sans-serif;letter-spacing:.28em;cursor:pointer;transition:.25s}
+.enter-btn:hover{background:#2b101d;box-shadow:0 0 20px #d98fba55;transform:translateY(-2px)}
+.opening-stars{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,#fff8 0 1px,transparent 2px);background-size:110px 110px;opacity:.35;animation:drift 8s linear infinite}
+@keyframes openingIn{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes drift{to{background-position:110px 110px}}
+body.locked{overflow:hidden}
+@media(prefers-reduced-motion:reduce){#opening,#opening .curtain,.opening-card{transition:none;animation:none}.opening-stars{animation:none}}
 </style>
 </head>
-<body>
+<body class="locked">
+<div id="opening" aria-label="Ashie's profile opening">
+  <div class="opening-bg"></div>
+  <div class="opening-stars"></div>
+  <div class="curtain left"></div>
+  <div class="curtain right"></div>
+  <div class="opening-card">
+    <div class="opening-kicker">welcome to</div>
+    <div class="opening-title">Ashie's</div>
+    <div class="opening-kicker">fandom profile</div>
+    <p class="opening-sub">~ a little corner of the internet ~</p>
+    <button class="enter-btn" id="enterBtn">ENTER</button>
+  </div>
+</div>
+
 <nav class="nav">
   <a href="#about">About</a><a href="#fandoms">Fandoms</a><a href="#favorites">Favorites</a>
   <a href="#hobbies">Hobbies</a><a href="#music">Music</a><a href="#fashion">Fashion</a><a href="#ships">Yumeships</a>
@@ -273,5 +308,17 @@ ul{padding-left:20px}
   <div>✦ Ashie's little fandom corner ✦</div>
   <a class="back" href="#">Back to top ↑</a>
 </footer>
+
+<script>
+const opening=document.getElementById('opening');
+const enterBtn=document.getElementById('enterBtn');
+function enterSite(){
+  opening.classList.add('hide');
+  document.body.classList.remove('locked');
+  setTimeout(()=>opening.remove(),1000);
+}
+enterBtn.addEventListener('click',enterSite);
+setTimeout(enterSite,7000);
+</script>
 </body>
 </html>
